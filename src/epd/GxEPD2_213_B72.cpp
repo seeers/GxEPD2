@@ -328,8 +328,10 @@ void GxEPD2_213_B72::_InitDisplay()
   _writeCommand(0x7E); //set digital block control
   _writeData(0x3B);
   _writeCommand(0x01); //Driver output control
-  _writeData(0xF9);    // (HEIGHT - 1) % 256
-  _writeData(0x00);    // (HEIGHT - 1) / 256
+ // _writeData(0xF9);    // 250 (HEIGHT - 1) % 256
+ // _writeData(0x00);    // 250 (HEIGHT - 1) / 256
+  _writeData(0x28);    // 296 (HEIGHT - 1) % 256
+  _writeData(0x01);    // 296 (HEIGHT - 1) / 256
   _writeData(0x00);
   _writeCommand(0x3C); //BorderWavefrom
   _writeData(0x03);
