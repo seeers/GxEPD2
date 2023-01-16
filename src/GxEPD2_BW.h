@@ -46,6 +46,7 @@
 #include "epd/GxEPD2_213_M21.h"
 #include "epd/GxEPD2_213_T5D.h"
 #include "epd/GxEPD2_213_BN.h"
+#include "epd/GxEPD2_219_PriceSW.h"
 #include "epd/GxEPD2_260.h"
 #include "epd/GxEPD2_266_BN.h"
 #include "epd/GxEPD2_260_M01.h"
